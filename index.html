@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layssa Suelen — Desenvolvedora Software</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- TELA DE ABERTURA -->
+<div class="intro" id="intro">
+  <div class="intro-icons">
+    <span>&lt;/&gt;</span>
+    <span>👤</span>
+    <span>⌘</span>
+  </div>
+  <h1 class="intro-title">Bem-vindo ao meu<br><span class="grad-text">portfólio digital</span></h1>
+  <!-- EDITAR AQUI: troque href="#inicio" pelo link do seu site publicado, se já tiver um -->
+  <a href="#inicio" class="intro-link">🌐 layssa.dev</a>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <span class="brand">Layssa</span>
+  <nav class="nav-links">
+    <a href="#inicio" class="nav-link active">Início</a>
+    <a href="#sobre" class="nav-link">Sobre</a>
+    <a href="#portfolio" class="nav-link">Portfólio</a>
+    <a href="#contacto" class="nav-link">Contacto</a>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- INÍCIO-->
+  <section class="hero" id="inicio">
+    <div class="hero-text">
+      <span class="badge">✨ Pronta para inovar</span>
+      <h1 class="hero-title">Desenvolvedora<br><span class="grad-text">De Software</span></h1>
+      <p class="hero-typing"><span id="typingText"></span><span class="cursor">|</span></p>
+      <p class="hero-desc">
+        Construo interfaces e sistemas modernos, focados em desempenho e
+        experiências que resolvem problemas reais, unindo back-end robusto
+        a front-ends acessíveis.
+      </p>
+      <div class="hero-tags">
+        <span>Java</span><span>Spring Boot</span><span>Node.js</span><span>TypeScript</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">Projetos ↗</a>
+        <a href="#contacto" class="btn btn-ghost">Contacto ✉</a>
+      </div>
+      <div class="hero-socials">
+    
+        <a href="https://github.com/layssasuelen03-creator" target="_blank" rel="noopener" aria-label="GitHub">⌘</a>
+        <a href="https://www.linkedin.com/in/layssa-xavier-618586242/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="floating-chip chip-1">CSS</div>
+      <div class="floating-chip chip-2">&lt;/&gt;</div>
+      <div class="floating-chip chip-3">Java</div>
+      <div class="floating-chip chip-4">Node</div>
+      <div class="hero-card">
+        <div class="hero-card-bar"><span></span><span></span><span></span></div>
+        <div class="hero-card-body">
+          <p><span class="t-key">const</span> dev = {</p>
+          <p class="t-indent"><span class="t-prop">nome</span>: <span class="t-str">"Layssa"</span>,</p>
+          <p class="t-indent"><span class="t-prop">foco</span>: <span class="t-str">"Back-End"</span>,</p>
+          <p class="t-indent"><span class="t-prop">stack</span>: [<span class="t-str">"Java"</span>, <span class="t-str">"Spring"</span>]</p>
+          <p>};</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE-->
+  <section class="section" id="sobre">
+    <h2 class="section-title-main center grad-text">Sobre mim</h2>
+    <p class="section-subtitle">✨ Transformando ideias em código e experiências digitais ✨</p>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="about-hello grad-text">Olá, eu sou</p>
+        <!-- EDITAR AQUI: adicione seu sobrenome completo se quiser -->
+        <h3 class="about-name">Layssa Suelen</h3>
+        <p>
+          Sou estudante de <strong>Ciência da Computação</strong>, com foco
+          em desenvolvimento de software e experiência em projetos
+          realizados em Residência Tecnológica, em parceria com empresas.
+        </p>
+        <p>
+          Tenho experiência com desenvolvimento <strong>Back-End</strong> e
+          <strong>Front-End</strong>, APIs REST e bancos de dados, utilizando
+          Java, Spring Boot, Node.js, TypeScript, JavaScript, HTML e CSS.
+          Atualmente, direciono meus estudos para Java e Spring Boot,
+          aprofundando meus conhecimentos em desenvolvimento back-end.
+        </p>
+        <div class="about-actions">
+          <!-- Currículo em PDF -->
+          <a href="documentos/currículo.pdf" class="btn btn-primary" download>📄 Baixar CV</a>
+          <a href="#portfolio" class="btn btn-ghost">&lt;/&gt; Ver Projetos</a>
+        </div>
+      </div>
+
+      <div class="about-photo">
+        <div class="photo-ring">
+          <!-- Foto de perfil -->
+          <div class="photo-placeholder"> <img src="images/perfil/perfil.png" alt="Layssa"> </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <button class="stat-card" data-scroll="#projetos-tab">
+        <span class="stat-icon">&lt;/&gt;</span>
+        <span class="stat-number" id="statProjetos">0</span>
+        <span class="stat-label">Projetos concluídos</span>
+        <span class="stat-sub">Soluções entregues ↗</span>
+      </button>
+      <button class="stat-card" data-scroll="#certificados-tab">
+        <span class="stat-icon">🏅</span>
+        <span class="stat-number" id="statCertificados">0</span>
+        <span class="stat-label">Certificados</span>
+        <span class="stat-sub">Competências reconhecidas ↗</span>
+      </button>
+      <button class="stat-card" data-modal="anos">
+        <span class="stat-icon">🌐</span>
+        <!-- EDITAR AQUI: troque "1" pelo número real de anos de experiência/estudo -->
+        <span class="stat-number">1</span>
+        <span class="stat-label">Anos de experiência</span>
+        <span class="stat-sub">Aprendizagem contínua ↗</span>
+      </button>
+    </div>
+
+    <div class="mini-grid">
+      <button class="mini-card" data-modal="objetivo">
+        <span>👤</span><p>Objetivo</p><small>Ver mais ↗</small>
+      </button>
+      <button class="mini-card" data-modal="experiencia">
+        <span>&lt;/&gt;</span><p>Experiência</p><small>Ver mais ↗</small>
+      </button>
+      <button class="mini-card" data-modal="competencias">
+        <span>🏅</span><p>Competências</p><small>Ver mais ↗</small>
+      </button>
+      <button class="mini-card" data-modal="disponibilidade">
+        <span>🌐</span><p>Disponibilidade</p><small>Ver mais ↗</small>
+      </button>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section class="section" id="portfolio">
+    <h2 class="section-title-main center grad-text">Vitrine de Portfólio</h2>
+    <p class="section-subtitle">Explore projetos, certificações e stacks que refletem a minha evolução contínua em desenvolvimento e tecnologia.</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="projetos">&lt;/&gt; Projetos</button>
+      <button class="tab-btn" data-tab="certificados">🏅 Certificados</button>
+      <button class="tab-btn" data-tab="stack">⚙ Stack Tecnológica</button>
+    </div>
+
+    <!-- ABA: PROJETOS -->
+    <div class="tab-panel active" id="projetos-tab">
+      <div class="projects-grid" id="projectsGrid"></div>
+      <p class="empty-hint" id="projectsEmptyHint" hidden>
+        Nenhum projeto ainda — adicione o primeiro editando a lista <code>projects</code> em <code>script.js</code>.
+      </p>
+    </div>
+
+    <!-- ABA: CERTIFICADOS -->
+    <div class="tab-panel" id="certificados-tab">
+      <div class="certs-grid" id="certsGrid"></div>
+      <p class="empty-hint" id="certsEmptyHint" hidden>
+        Nenhum certificado ainda — adicione editando a lista <code>certificates</code> em <code>script.js</code>.
+      </p>
+    </div>
+
+    <!-- ABA: STACK -->
+    <div class="tab-panel" id="stack-tab">
+      <div class="stack-grid" id="stackGrid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACTO  -->
+  <section class="section" id="contacto">
+    <h2 class="section-title-main center grad-text">Contacte-me</h2>
+    <p class="section-subtitle">Tem um projeto ou dúvida? Escreva-me e responderei o mais rápido possível.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Vamos conversar</h3>
+        <p>Partilhe desafios sobre desenvolvimento, back-end ou oportunidades e encontraremos a melhor solução juntos.</p>
+        <ul class="contact-details">
+    
+          <li>✉ layssasuelen03@gmail.com</li>
+          <li>📍 Brasília, Brasil · Remoto</li>
+        </ul>
+
+        <div class="contact-quicklinks">
+          <p class="quick-title">Fale comigo</p>
+          <a href="https://www.linkedin.com/in/layssa-xavier-618586242/" target="_blank" rel="noopener" class="quick-item quick-linkedin">
+            <span>LinkedIn</span><small>www.linkedin.com/in/layssa-xavier-618586242</small>
+          </a>
+          
+          <div class="quick-title">
+            <a href="mailto:layssasuelen03@gmail.com" target="_blank" rel="noopener" class="quick-item quick-instagram">
+              <span>E-mail</span><small>layssasuelen03@gmail.com</small>
+            </a>
+            <a href="https://github.com/layssasuelen03-creator" target="_blank" rel="noopener" class="quick-item quick-github">
+              <span>GitHub</span><small>layssasuelen03-creator</small>
+            </a>
+          </div>
+          <div class="quick-row">
+            
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card">
+        <p class="comments-title">💬 Comentários (<span id="commentCount">0</span>)</p>
+        <form id="messageForm">
+          <label>Nome *
+            <input type="text" id="formName" placeholder="Digite o seu nome" required>
+          </label>
+          <label>Mensagem *
+            <textarea id="formMessage" placeholder="Escreva a sua mensagem aqui..." required></textarea>
+          </label>
+          <label class="file-label">Foto de Perfil (opcional)
+            <label for="formPhoto" class="file-upload">
+              🖼 <span id="fileUploadText">Escolher Foto de Perfil</span>
+            </label>
+            <input type="file" id="formPhoto" accept="image/*" hidden>
+            <small class="file-hint">Tamanho máximo: 5MB</small>
+          </label>
+          <button type="submit" class="btn btn-primary full">✈ Publicar Comentário</button>
+        </form>
+
+        <div class="comments-list" id="commentsList"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Desenvolvido por Layssa Suelen</p>
+  </footer>
+
+</main>
+
+<!-- MODAL GENÉRICO  -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+    <h3 id="modalTitle"></h3>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
